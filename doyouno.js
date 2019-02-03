@@ -10,7 +10,7 @@ const unhash = number => {
 let text = '';
 let value = number;
 const letters = "acdegilmnoprstuw";
-for (let i = 0; i < 8 && value > 1; i++) {
+for (let i = 0; i < 8 && value > 7; i++) {
     text += letters[value%37];
     value = Math.floor(value/37);
 }
